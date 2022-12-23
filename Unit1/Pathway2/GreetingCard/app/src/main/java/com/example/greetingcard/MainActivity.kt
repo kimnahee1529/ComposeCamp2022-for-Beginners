@@ -3,7 +3,9 @@ package com.example.greetingcard
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
@@ -22,7 +24,6 @@ class MainActivity : ComponentActivity() {
             GreetingCardTheme {
                 // A surface container that uses the 'background' color from the theme
                 Surface(
-//                    modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background) {
                     Greeting("Android")
                 }
