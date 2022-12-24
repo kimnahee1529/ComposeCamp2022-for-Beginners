@@ -43,6 +43,6 @@ fun Greeting(name: String) {
 @Composable
 fun DefaultPreview() {
     GreetingCardTheme {
-        Greeting("Meghan")
+        Greeting("Google Compose Camp!")
     }
 }
