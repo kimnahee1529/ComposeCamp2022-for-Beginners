@@ -45,4 +45,6 @@ private fun ArticleCard(
 
 @Preview(showBackground = true)
 @Composable
-fun DefaultPreview() { }
+fun DefaultPreview() { 
+    ArticleCard(title = , shortDescription = , longDescription = , imagePainter = )
+}

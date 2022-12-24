@@ -45,7 +45,7 @@ class MainActivity : ComponentActivity() {
                 Surface(
                     color = MaterialTheme.colors.background
                 ){
-                    BirthdayGreetingWithImage("Happy Birthday Sam!", "- from Emma")
+                    BirthdayGreetingWithImage(getString(R.string.happy_birthday_text), getString(R.string.signature_text))
                 }
             }
         }
@@ -59,13 +59,21 @@ fun BirthdayGreetingWithText(message: String, from: String) {
     Column {
         Text(
             text = message,
-            fontSize = 36.sp
+            fontSize = 36.sp,
+            modifier = Modifier
+                .fillMaxWidth()
+                .wrapContentWidth(Alignment.CenterHorizontally)
+                .padding(start = 16.dp, top = 16.dp)
         )
         Text(
             text = from,
-            fontSize = 24.sp
+            fontSize = 24.sp,
+            modifier = Modifier
+                .fillMaxWidth()
+                .wrapContentWidth(Alignment.CenterHorizontally)
+                .padding(start = 16.dp, end = 16.dp)
         )
-    }
+            }
 }
 
 // 5. Box 레이아웃 추
@@ -75,7 +83,11 @@ fun BirthdayGreetingWithImage(message: String, from: String) {
     Box {
         Image(
             painter = image,
-            contentDescription = null
+            contentDescription = null,
+            modifier = Modifier
+                .fillMaxHeight()
+                .fillMaxWidth(),
+            contentScale = ContentScale.Crop
         )
         BirthdayGreetingWithText(message = message, from = from)
     }
