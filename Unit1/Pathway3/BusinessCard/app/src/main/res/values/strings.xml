@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BusinessCard</string>
+    <string name="fullName">Nahee Kim</string>
+    <string name="title">Android Developer Extraordiaire</string>
+    <string name="call">444 555 6666</string>
+    <string name="job">AndroidDev</string>
+    <string name="email">hee@android.com</string>
+</resources>
